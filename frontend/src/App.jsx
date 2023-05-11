@@ -11,7 +11,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {api.length > 0 && numeroQuestion < api.length ? (
+      {numeroQuestion < api.length && (
         <div>
           <p>{api[numeroQuestion].question}</p>
           {api[numeroQuestion].options.map((res) => (
@@ -28,8 +28,6 @@ function App() {
             </button>
           ))}
         </div>
-      ) : (
-        "test"
       )}
     </div>
   );
