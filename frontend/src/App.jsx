@@ -3,13 +3,36 @@ import "./App.scss";
 
 function App() {
   const [api, setApi] = useState([]);
+  const [numeroQuestion, setNumeroQuestion] = useState(0);
   useEffect(() => {
     fetch(import.meta.env.VITE_BACKEND_URL)
       .then((res) => res.json())
       .then((res) => setApi(res));
   }, []);
-  console.log(api);
-  return <div className="App">test</div>;
+  return (
+    <div className="App">
+      {api.length > 0 && numeroQuestion < api.length ? (
+        <div>
+          <p>{api[numeroQuestion].question}</p>
+          {api[numeroQuestion].options.map((res) => (
+            <button
+              type="button"
+              onClick={() => {
+                if (api.length) {
+                  setNumeroQuestion(numeroQuestion + 1);
+                } else {
+                }
+              }}
+            >
+              {res.option}
+            </button>
+          ))}
+        </div>
+      ) : (
+        "test"
+      )}
+    </div>
+  );
 }
 
 export default App;
