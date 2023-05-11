@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import "react-tooltip/dist/react-tooltip.css";
 import "./App.scss";
+import Header from "./component/Header";
 
 function App() {
   const [api, setApi] = useState([]);
@@ -11,18 +13,14 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Header />
       {numeroQuestion < api.length && (
         <div>
           <p>{api[numeroQuestion].question}</p>
           {api[numeroQuestion].options.map((res) => (
             <button
               type="button"
-              onClick={() => {
-                if (api.length) {
-                  setNumeroQuestion(numeroQuestion + 1);
-                } else {
-                }
-              }}
+              onClick={() => setNumeroQuestion(numeroQuestion + 1)}
             >
               {res.option}
             </button>
