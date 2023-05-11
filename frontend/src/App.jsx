@@ -1,16 +1,15 @@
-import React, { useCallback, useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import "react-tooltip/dist/react-tooltip.css";
+import { useEffect, useState } from "react";
 import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={"la"} />
-      </Routes>
-    </div>
-  );
+  const [api, setApi] = useState([]);
+  useEffect(() => {
+    fetch(import.meta.env.VITE_BACKEND_URL)
+      .then((res) => res.json())
+      .then((res) => setApi(res));
+  }, []);
+  console.log(api);
+  return <div className="App">test</div>;
 }
 
 export default App;
