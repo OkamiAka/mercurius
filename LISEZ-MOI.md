@@ -1,24 +1,6 @@
-# Yokai Quiz
+# Mercurius
 
-Yokai Quiz est une application développée en React qui propose un mini-jeu de quiz sur le thème des mangas et des animes, dans lequel le joueur doit purifier des Yokais malicieux (créatures surnaturelles dans le folklore japonais) qui sèment la zizanie dans tout le Japon.
-
-Ce projet est réalisé par :
-
-Christophe Dubois : https://github.com/tetsuya51
-Nils Caqueux : https://github.com/OkamiAka
-Alexandre Oudin : https://github.com/Alexandre-Oudin
-Enzo Andre : https://github.com/Enzo-adr5
-Flavien Jovic : https://github.com/FlavienJovic
-
-### Historique
-
-Sprint 0 (05/04/2023 - 07/04/2023) : Création du concept et première présentation au client.
-
-Sprint 1 (11/04/2023 - 14/04/2023) : création de composants, implementation des api, création des boutons temple & création du quiz
-
-Sprint 2 (17/04/2023 - 21/04/2023) : Création de composants, implémentation du css, modifications d'api pour integrer des images, transert de props, gestion de states et de useEffects.
-
-Sprint 3 (24/04/2023 - 28/04/2023) : Création de composants, ajouts de css, modifications d'api pour integrer des descriptions, transert de props, gestion de states et de useEffects, creation de local storage.
+Mercurius est un site de quiz de voyage qui tire son nom du dieu romain du commerce et des voyages. Tout comme le dieu Mercurius, le site vous guide dans un voyage à travers différents pays en vous aidant à trouver la destination idéale pour vos prochaines vacances. Avec un questionnaire amusant et interactif, vous pouvez répondre à des questions sur vos préférences de voyage en matière de budget, de climat, de type de vacances, de cuisine et de période de l'année. En fonction de vos réponses, le site vous suggère les destinations les mieux adaptées à vos goûts et à vos attentes. Prêt à découvrir votre prochaine destination de rêve avec Mercurius ?
 
 ## Concept
 
