@@ -17,3 +17,15 @@ h1 {
   color: #94b9ff;
   padding-bottom: 2.5rem;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+.logo {
+  max-width: 10rem;
+}

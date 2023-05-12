@@ -14,19 +14,21 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {numeroQuestion < api.length && (
-        <div className="quiz">
-          <p>{api[numeroQuestion].question}</p>
-          {api[numeroQuestion].options.map((res) => (
-            <button
-              type="button"
-              onClick={() => setNumeroQuestion(numeroQuestion + 1)}
-            >
-              {res.option}
-            </button>
-          ))}
-        </div>
-      )}
+      <div className="quiz">
+        {numeroQuestion < api.length && (
+          <div className="pop">
+            <p>{api[numeroQuestion].question}</p>
+            {api[numeroQuestion].options.map((res) => (
+              <button
+                type="button"
+                onClick={() => setNumeroQuestion(numeroQuestion + 1)}
+              >
+                {res.option}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
