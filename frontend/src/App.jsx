@@ -9,6 +9,19 @@ function App() {
       .then((res) => res.json())
       .then((res) => setApi(res));
   }, []);
+
+  //  function countOccurrences(countries) {
+  //   return countries.reduce((accumulator, country) => {
+  //     if (accumulator[country]) {
+  //       accumulator[country] += 1;
+  //     } else {
+  //       accumulator[country] = 1;
+  //     }
+  //     return accumulator;
+  //   }, {});
+  // }
+  // let countries = ["France,France,Japon,Japon"];
+
   return (
     <div className="App">
       {numeroQuestion < api.length && (
@@ -18,10 +31,7 @@ function App() {
             <button
               type="button"
               onClick={() => {
-                if (api.length) {
-                  setNumeroQuestion(numeroQuestion + 1);
-                } else {
-                }
+                setNumeroQuestion(numeroQuestion + 1);
               }}
             >
               {res.option}
