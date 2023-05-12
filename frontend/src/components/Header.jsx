@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
-import logo from "../Image/Logo.png";
+import logo from "../Image/logo2.png";
 
 function Header() {
   return (
@@ -9,6 +9,9 @@ function Header() {
       <Link to="/">
         <img src={logo} alt="Header" className="logo" />
       </Link>
+      <div className="title">
+        <h1>MERCURIUS</h1>
+      </div>
     </header>
   );
 }
