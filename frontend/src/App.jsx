@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
       {numeroQuestion < api.length && (
-        <div>
+        <div className="quiz">
           <p>{api[numeroQuestion].question}</p>
           {api[numeroQuestion].options.map((res) => (
             <button
