@@ -74,11 +74,20 @@ function CountryDetails({ country }) {
   if (loading) {
     return <p>Chargement...</p>;
   }
+  const translations = Object.keys(countryDetails.translations).map(function (
+    cle
+  ) {
+    return [Number(cle), countryDetails.translations[cle]];
+  });
+  console.log(translations);
   return (
     <div className="quiz">
       <h2>Destination recommandée : </h2>
       <h1>{country}</h1>
       <img src={countryDetails.flags.svg} alt={`Drapeau de ${country}`} />
+      {translations.map((translation) => (
+        <p>{translation[1].official}</p>
+      ))}
     </div>
   );
 }
