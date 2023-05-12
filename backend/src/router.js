@@ -157,6 +157,7 @@ const questions = [
     ],
   },
 ];
+
 router.get("/", (req, res) => {
   res.send(questions);
 });

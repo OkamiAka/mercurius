@@ -1,6 +1,29 @@
 # Mercurius
 
-Mercurius est un site de quiz de voyage qui tire son nom du dieu romain du commerce et des voyages. Tout comme le dieu Mercurius, le site vous guide dans un voyage à travers différents pays en vous aidant à trouver la destination idéale pour vos prochaines vacances. Avec un questionnaire amusant et interactif, vous pouvez répondre à des questions sur vos préférences de voyage en matière de budget, de climat, de type de vacances, de cuisine et de période de l'année. En fonction de vos réponses, le site vous suggère les destinations les mieux adaptées à vos goûts et à vos attentes. Prêt à découvrir votre prochaine destination de rêve avec Mercurius ?
+Mercurius est un site de suggestions de voyage qui emprunte son nom au dieu romain éponyme du commerce et des voyages. 
+
+Tout comme le dieu Mercurius, notre site vous guide dans un voyage à travers différents pays, en vous aidant à trouver la destination idéale pour vos prochaines vacances.
+ 
+Avec un questionnaire amusant et interactif, vous pouvez répondre en fonction de vos préférences de voyage en matière : 
+de budget, de climat, de type de vacances, de cuisine 
+et de période de l'année. 
+
+En fonction de vos réponses, le site vous suggère les destinations les mieux adaptées à vos goûts et à vos attentes. 
+
+Prêt à découvrir votre prochaine destination de rêve avec Mercurius ?
+
+
+Ce projet est réalisé par :
+
+Alexandre Pompidou : https://github.com/Alex-5110
+Elodie Jehl : https://github.com/Elodie0530
+Flavien Jovic : https://github.com/FlavienJovic
+Mohamed Maach : https://github.com/Maachino
+Nils Caqueux : https://github.com/OkamiAka
+
+### Historique
+
+Hackathon projet réaliser en moins de 2 jours.
 
 ## Concept
 
