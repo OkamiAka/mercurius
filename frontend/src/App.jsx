@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "react-tooltip/dist/react-tooltip.css";
 import "./App.scss";
-import Header from "./component/Header";
+import Header from "./components/Header";
 
 function App() {
   const [api, setApi] = useState([]);
