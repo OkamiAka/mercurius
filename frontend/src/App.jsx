@@ -6,11 +6,13 @@ import Header from "./components/Header";
 function App() {
   const [api, setApi] = useState([]);
   const [numeroQuestion, setNumeroQuestion] = useState(0);
+  const [rep, setRep] = useState([]);
   useEffect(() => {
     fetch(import.meta.env.VITE_BACKEND_URL)
       .then((res) => res.json())
       .then((res) => setApi(res));
   }, []);
+  console.log(rep);
   return (
     <div className="App">
       <Header />
@@ -20,7 +22,10 @@ function App() {
           {api[numeroQuestion].options.map((res) => (
             <button
               type="button"
-              onClick={() => setNumeroQuestion(numeroQuestion + 1)}
+              onClick={() => {
+                setRep([...rep, ...res.countries]);
+                setNumeroQuestion(numeroQuestion + 1);
+              }}
             >
               {res.option}
             </button>
