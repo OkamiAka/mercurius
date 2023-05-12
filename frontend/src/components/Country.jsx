@@ -53,10 +53,8 @@ function CountryDetails({ country }) {
       "Géorgie": "GE",
       "Philippines": "PH",
     };
-  
     return countriesCode[frenchName];
   }
-  
   useEffect(() => {
     const countryCode = convertCountryNameToCode(country);
     // Récupérer les données du pays depuis l'API
