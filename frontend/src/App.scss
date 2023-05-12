@@ -4,7 +4,11 @@
 }
 body{
     background-color: #94b9ff;
+    background-image: url("./Image/palmier.png");
+    background-size: cover;
+    background-repeat: no-repeat;
  .quiz{
+    
     border-radius: 1.5rem;
     background-color:#a1ffad;
     display: flex;
@@ -37,4 +41,14 @@ body{
     margin-bottom: 30px;
     font-size: 2rem;
  }
+ }
+ @media (max-width: 767px) {
+   body {
+      width: 100%;
+      height: 100%;
+     background-image: url("./Image/plage.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+   
+   }
  }
